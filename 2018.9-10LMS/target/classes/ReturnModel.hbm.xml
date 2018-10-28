@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.niit.model.ReturnModel" table="RETURNMODEL">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="bookname" type="java.lang.String">
+            <column name="bookname" />
+        </property>
+        <property name="img" type="java.lang.String">
+            <column name="img" />
+        </property>
+        <property name="author" type="java.lang.String">
+            <column name="author" />
+        </property>
+        <property name="remain" type="java.lang.String">
+            <column name="remain" />
+        </property>
+		<property name="date" type="java.lang.String">
+            <column name="date" />
+        </property>
+        <property name="book_id" type="int">
+            <column name="book_id" />
+        </property>
+        <property name="user_name" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+        <property name="op" type="java.lang.String">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>

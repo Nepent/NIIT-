@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.niit.model.BookModel" table="BOOKMODEL">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="bookname" type="java.lang.String">
+            <column name="bookname" />
+        </property>
+        <property name="img" type="java.lang.String">
+            <column name="img" />
+        </property>
+        <property name="author" type="java.lang.String">
+            <column name="author" />
+        </property>
+        <property name="press" type="java.lang.String">
+            <column name="press" />
+        </property>
+        <property name="describe" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="remain" type="java.lang.String">
+            <column name="remain" />
+        </property>
+         <property name="price" type="java.lang.String">
+            <column name="price" />
+        </property>
+        <property name="category" type="java.lang.String">
+            <column name="category" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="date" />
+        </property>
+        <property name="borrow_date" type="java.lang.String">
+            <column name="borrow_date" />
+        </property>
+    </class>
+</hibernate-mapping>
